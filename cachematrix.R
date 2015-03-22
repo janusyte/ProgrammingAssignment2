@@ -36,9 +36,9 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## get the inverse matrix value from function makeCacheMatrix
         mm <- x$getinv()
-        ## check if the the inverse matrix was already calculated and if yes, return the value
+        ## check if the the inverse matrix was already calculated
         if(!is.null(mm)) {
-                message("getting cached matrix data")
+        ## if yes, get the cached matrix data
                 return(mm)
         }
         ## calculate inverse matrix if it was not calculated before
